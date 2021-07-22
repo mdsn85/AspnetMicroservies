@@ -3,9 +3,35 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{86053FBD-CBC8-4922-BA43-A87345242DD7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{459AF1D9-9C47-42C3-A762-ED6C9CE66370}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.API", "Catalog\Catalog.API\Catalog.API.csproj", "{F7624275-8A8A-45CE-8A9C-A3F66E8D6A52}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{5257E64C-9EE2-4E1E-B4F1-631E32D95A26}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7624275-8A8A-45CE-8A9C-A3F66E8D6A52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7624275-8A8A-45CE-8A9C-A3F66E8D6A52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7624275-8A8A-45CE-8A9C-A3F66E8D6A52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7624275-8A8A-45CE-8A9C-A3F66E8D6A52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5257E64C-9EE2-4E1E-B4F1-631E32D95A26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5257E64C-9EE2-4E1E-B4F1-631E32D95A26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5257E64C-9EE2-4E1E-B4F1-631E32D95A26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5257E64C-9EE2-4E1E-B4F1-631E32D95A26}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{459AF1D9-9C47-42C3-A762-ED6C9CE66370} = {86053FBD-CBC8-4922-BA43-A87345242DD7}
+		{F7624275-8A8A-45CE-8A9C-A3F66E8D6A52} = {459AF1D9-9C47-42C3-A762-ED6C9CE66370}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {39DDA0B4-04AF-419E-A0F2-93330B8CBF0B}
